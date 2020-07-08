@@ -1,11 +1,11 @@
-require("dotenv").config();
+require('dotenv').config()
 
-const DB = require("./DB");
+const DB = require('./DB')
 
 const init = async () => {
-  const SQL = await DB();
+  const SQL = await DB()
 
-  console.log(SQL);
-};
+  console.log(SQL)
+}
 
-init();
+init()
