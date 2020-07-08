@@ -1,0 +1,41 @@
+Arguments: 
+  /home/louis/.nvm/versions/node/v14.3.0/bin/node /home/louis/.nvm/versions/node/v14.3.0/bin/yarn add sequilize pg pg-hstore
+
+PATH: 
+  /home/louis/.nvm/versions/node/v14.3.0/bin:/bin:/home/louis/bin:/home/louis/.local/bin:/home/louis/.deno/bin:/usr/local/bin:/opt/genymobile/genymotion/tools:/Users/myuser/Library/Android/sdk:/home/louis/.cargo/bin:/home/louis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/louis/.yarn/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/sequilize: Not found
+      at Request.params.callback [as _callback] (/home/louis/.nvm/versions/node/v14.3.0/lib/node_modules/yarn/lib/cli.js:66987:18)
+      at Request.self.callback (/home/louis/.nvm/versions/node/v14.3.0/lib/node_modules/yarn/lib/cli.js:140748:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/home/louis/.nvm/versions/node/v14.3.0/lib/node_modules/yarn/lib/cli.js:141720:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/home/louis/.nvm/versions/node/v14.3.0/lib/node_modules/yarn/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1224:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "rss-scraper",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
