@@ -1,27 +1,19 @@
 const { Sequelize } = require('sequelize')
 
+const config = require('./config/config')
+
 const DB = () => {
-  return new Promise((resolve, reject) => {
-    let instance
-    if (!instance) {
-      instance = new Sequelize({
-        dialect: 'sqlite',
-        storage: 'path/to/database.sqlite',
-      })
-      console.log(instance)
-      instance
-        .authenticate()
-        .then(() => {
-          console.log('Connection has been established successfully.')
-          resolve(instance)
-        })
-        .catch((err) => {
-          console.error('Unable to connect to the database:', err)
-          reject()
-        })
-    }
-    resolve(instance)
-  })
+  let instance
+  if (!instance) {
+    instance = new Sequelize({
+      dialect: config.dialect,
+      database: config.database,
+      username: config.username,
+      password: config.password,
+      host: config.host
+    })
+  }
+  return instance
 }
 
-module.exports = DB
+module.exports = { getInstance: DB }

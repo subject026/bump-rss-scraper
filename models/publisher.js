@@ -1,7 +1,8 @@
 'use strict'
 const { Model } = require('sequelize')
+
 module.exports = (sequelize, DataTypes) => {
-  class Feed extends Model {
+  class Publisher extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,14 +12,19 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Feed.init(
+  Publisher.init(
     {
-      link: DataTypes.STRING
+      name: DataTypes.STRING,
+      homepage: DataTypes.STRING,
+      rss: DataTypes.STRING,
+      twitter: DataTypes.STRING,
+      facebook: DataTypes.STRING
     },
     {
       sequelize,
-      modelName: 'Feed'
+      modelName: 'Publisher'
     }
   )
-  return Feed
+
+  return Publisher
 }

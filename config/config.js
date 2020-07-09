@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const makeConfig = () => {
   switch (process.env.MODE) {
     case 'development':

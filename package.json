@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "MODE=development node index.js",
-    "seq": "npx sequelize-cli"
+    "seq": "MODE=development npx sequelize-cli"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
